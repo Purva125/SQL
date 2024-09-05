@@ -1,1 +1,1 @@
-SQL queries from leetcode 
+SQL queries
