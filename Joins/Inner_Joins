@@ -1,0 +1,16 @@
+Problem :
+
+consider two tables of a supermarket set-up. The first table named Customers gives us information about different customers, i.e., their customer id, name, and phone number.
+Here, CustID is the primary key that uniquely identifies each row. The second table, named Shopping_Details, gives us information about items bought by customers, i.e.,
+item id, customer id (referencing the customer that bought the item), item name, and quantity.Write a query to get all the customers who have bought items from the store. 
+Display their name, item bought, and quantity.
+
+Code:
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+SELECT Customers.Name, Shopping_Details.Item_Name, Shopping_Details.Quantity
+FROM Customers INNER JOIN Shopping_Details
+WHERE Customers.ID==Shopping_Details.ID;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
